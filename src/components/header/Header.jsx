@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import logo from "../../assets/Untitled-2.png";
 import { IoMenuSharp } from "react-icons/io5";
 import { IoMdCloseCircleOutline } from "react-icons/io";
-
 const Header = () => {
   const[closeButtonDekhineCondition, SetButtonDekhineCondition]= useState(false);
   const handleclick =()=>{
-    SetButtonDekhineCondition(true);
+    SetButtonDekhineCondition(!closeButtonDekhineCondition);
+  
   }
   return (
-    <div className="flex justify-between mt-3 ">
+    <>
+    <div className="flex justify-between mt-3 z-20 shadow-slate-700">
       <div className="flex gap-3 ml-12  items-center ">
         <img className="h-10 w-10 rounded-full" src={logo} alt="logo" />
         <a className="font-semibold">Santosh</a>
       </div>
-      <div className="  flex list-none items-center gap-8 mr-12">
+      <div className=" list-none items-center gap-8 mr-12 md:flex hidden">
         <a href=""> Home</a>
 
         <a href="aboutpage">About</a>
@@ -27,6 +28,9 @@ const Header = () => {
     
       </div>
     </div>
+   
+    </>
+    
   );
 };
 
