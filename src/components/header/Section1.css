@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.forAm{
+    position:relative;
+    max-width:100%;
+    height: auto;
+    filter: drop-shadow(5px 10px 4px #7e607f);
+
+
+}
+.forAm img{
+  
+    position: relative;
+ 
+    animation: animateUser 4s ease-in-out infinite;
+}
+@keyframes animateUser{
+    50%{
+        translate: 0 10px;
+        
+        
+        
+        
+    }
+}
+
+  @media (min-width: 1025px){
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px){
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+  }
+  @media (min-width: 641px) and (max-width: 768px){
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+       
+
+  }
+  .mainHeader{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+}
+  @media (max-width: 640px){
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    
+    .mainHeader{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .primaryBtn{
+        display: flex;
+        flex-wrap:nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headingCustom{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+           
+        align-items: center;
+
+    }
+   
+    .followOption{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        gap: 20px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+   
+  }
